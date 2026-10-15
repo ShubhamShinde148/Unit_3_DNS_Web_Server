@@ -286,7 +286,13 @@ def cover(story):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
     ]))
     story.append(t)
-    story.append(Spacer(1, 1.6 * cm))
+    story.append(Spacer(1, 0.8 * cm))
+    story.append(Paragraph(
+        'GitHub Repository:&nbsp; '
+        '<link href="https://github.com/ShubhamShinde148/Unit_3_DNS_Web_Server" '
+        'color="#2E5496"><u>github.com/ShubhamShinde148/Unit_3_DNS_Web_Server</u></link>',
+        P("cvrepo", alignment=TA_CENTER, fontSize=10.5, textColor=GREY, leading=15)))
+    story.append(Spacer(1, 1.1 * cm))
     story.append(Paragraph(
         "A practical report submitted towards the Networking Protocols &amp; "
         "Communication (NPC) course, demonstrating the configuration and testing of "
